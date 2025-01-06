@@ -38,10 +38,10 @@ class Enemy():
             print(f"{self.name} ATTACKS 💥")
             kobe.health -= 20
         elif self.name == "sleet":
-            print(f"{self.name} ATTACKS 💥")
+            print(f"Sleet ATTACKS 💥")
             kobe.health -= 30
         elif self.name == "valerus":
-            print(f"{self.name} ATTACKS 💥")
+            print(f"Valerus ATTACKS 💥")
             kobe.health -= 40
 
 #Powers and abiltiy classes
@@ -49,7 +49,6 @@ class Fire(Character):
     def heavy(self):
         print(f"{self.name} hits with fire storm 🌪️")
         hit = randomizer()
-        print(hit)
         if hit == 5:
             print("CRITICKAL HIT 🩸")
             if enemy == "mordu":
@@ -68,7 +67,6 @@ class Fire(Character):
     def light(self):
         print(f"{self.name} hits with fire breath 🔥")
         hit = randomizer()
-        print(hit)
         if hit == 5:
             print("CRITICKAL HIT 🩸")
             if enemy == "mordu":
@@ -89,7 +87,6 @@ class Lightning(Character):
     def heavy(self):
         print(f"{self.name} hits with lighting strike ⚡️")
         hit = randomizer()
-        print(hit)
         if hit == 5:
             print("CRITICKAL HIT 🩸")
             if enemy == "mordu":
@@ -108,7 +105,6 @@ class Lightning(Character):
     def light(self):
         print(f"{self.name} hits with venom punch 🌩️")
         hit = randomizer()
-        print(hit)
         if hit == 5:
             print("CRITICKAL HIT 🩸")
             if enemy == "mordu":
@@ -129,7 +125,6 @@ class Air(Character):
     def heavy(self):
         print(f"{self.name}  hits with air blast 🌀")
         hit = randomizer()
-        print(hit)
         if hit == 5:
             print("CRITICKAL HIT 🩸")
             if enemy == "mordu":
@@ -148,7 +143,6 @@ class Air(Character):
     def light(self):
         print(f"{self.name} hits with air push 💨")
         hit = randomizer()
-        print(hit)
         if hit == 5:
             print("CRITICKAL HIT 🩸")
             if enemy == "mordu":
@@ -759,7 +753,6 @@ elif baron_choice == False:
             else:
                 print(f"valerus health: %{int(Valerus.health)}")
                 mordu.attack()
-                vertam_attack()
                 if light_counter == True:
                     light_number += 1
                     if light_number % 2 == 0:
@@ -807,7 +800,22 @@ elif baron_choice == False:
                         else:
                             print("out of flask")
                             time.sleep(1)
-    
+if baron_choice == True:
+    print("------------------------------------------------------------")
+    print("You bring end to the evil warlord that took innocent lives")
+    print("Who knows how many lives you saved, but at what cost?")
+    print("A lord who just wanted to avenge his peoples lifes")
+    print("One thing you know, you and Vertam wont stop until there is no more evil left")
+    print("THE END")
+    print("------------------------------------------------------------")  
+elif baron_choice == False:
+    print("------------------------------------------------------------")
+    print("You bring end to the evil warlord that took innocent lives")
+    print("Who knows how many lives you saved, but at what cost?")
+    print("A teacher, a master, a father figure")
+    print("One thing you know, you wont stop until there is no more evil left")
+    print("THE END")
+    print("------------------------------------------------------------")  
 
 
 
